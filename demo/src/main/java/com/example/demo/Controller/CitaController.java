@@ -18,7 +18,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/citas")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 @PreAuthorize("hasAnyRole('VETERINARIO', 'ADMIN')")
 public class CitaController {
 
